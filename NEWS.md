@@ -1,3 +1,7 @@
+CTUtemplate 0.6.7
+---------------------
+* add function `install.univ.packages` for easier installation of R-universe packages
+
 CTUtemplate 0.6.6
 ---------------------
 * make pinging when using use_qmd functions optional
