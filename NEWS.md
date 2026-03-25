@@ -1,3 +1,7 @@
+CTUtemplate 0.6.10
+---------------------
+* a function/RStudio addin to add gtsummary code for Ns for better showing missing data
+
 CTUtemplate 0.6.9
 ---------------------
 * better links in templates (support for dependency installation)

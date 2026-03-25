@@ -2,6 +2,7 @@
 
 export(OneStageSS)
 export(add_ctu_header)
+export(add_gtsummary_n)
 export(coloured_text)
 export(install.univ.packages)
 export(report_pdf)

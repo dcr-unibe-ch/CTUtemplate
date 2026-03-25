@@ -7,3 +7,8 @@ Name: Template rando code
 Description: Open template randomisation list code
 Binding: template_rando_code
 Interactive: false
+
+Name: Add Ns for gtsummary
+Description: Add code for showing Ns in gtsummary tables
+Binding: add_gtsummary_n
+Interactive: false

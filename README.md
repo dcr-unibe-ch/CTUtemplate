@@ -3,7 +3,7 @@
 
 # `CTUtemplate` <img src='man/figures/sticker.png' align="right" width="200">
 
-[![](https://img.shields.io/badge/dev%20version-0.6.9-blue.svg)](https://github.com/dcr-unibe-ch/CTUtemplate)
+[![](https://img.shields.io/badge/dev%20version-0.6.10-blue.svg)](https://github.com/dcr-unibe-ch/CTUtemplate)
 
 `CTUtemplate` is a package to create a template directory structure (and
 files) and also includes the CTUs annual safety report function.
@@ -60,6 +60,23 @@ You can also open the template code via
 
 There is also an addin to insert a header at the top of an open script
 (“Add CTU header”).
+
+### Add code for observed Ns in gtsummary
+
+gtsummary shows total Ns by default, which can lead to confusion,
+especially with regards the calculation of percentages in the presence
+of missing data.
+
+For ungrouped datasets (i.e. no by argument in `tbl_summary`), using
+add_n is sufficient. For grouped datasets
+(`tbl_summary(by = something)`), additional columns with the observed Ns
+can be added, but it requires a few lines of code.
+
+The ‘Add Ns for gtsummary’ addin places the necessary code into the
+active document. One part of the code is a function, which should be
+moved to an appropriate location for functions
+(e.g. 01_packages_functions.R). The rest can be integrated into a
+`tbl_summary` call.
 
 ### Quarto report templates
 
