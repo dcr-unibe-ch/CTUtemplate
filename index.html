@@ -33,7 +33,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">CTUtemplate</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.6.9</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.6.10</span>
       </span>
     </div>
 
@@ -62,7 +62,7 @@
 <div class="page-header"><h1 id="ctutemplate-">
 <code>CTUtemplate</code> <img src="reference/figures/sticker.png" align="right" width="200"><a class="anchor" aria-label="anchor" href="#ctutemplate-"></a>
 </h1></div>
-<p><a href="https://github.com/dcr-unibe-ch/CTUtemplate" class="external-link"><img src="https://img.shields.io/badge/dev%20version-0.6.9-blue.svg"></a></p>
+<p><a href="https://github.com/dcr-unibe-ch/CTUtemplate" class="external-link"><img src="https://img.shields.io/badge/dev%20version-0.6.10-blue.svg"></a></p>
 <p><code>CTUtemplate</code> is a package to create a template directory structure (and files) and also includes the CTUs annual safety report function.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
@@ -94,6 +94,13 @@
 <p><img src="reference/figures/addins.png"></p>
 <p>You can also open the template code via <code><a href="reference/template_rando_code.html">CTUtemplate::template_rando_code()</a></code>.</p>
 <p>There is also an addin to insert a header at the top of an open script (“Add CTU header”).</p>
+</div>
+<div class="section level3">
+<h3 id="add-code-for-observed-ns-in-gtsummary">Add code for observed Ns in gtsummary<a class="anchor" aria-label="anchor" href="#add-code-for-observed-ns-in-gtsummary"></a>
+</h3>
+<p>gtsummary shows total Ns by default, which can lead to confusion, especially with regards the calculation of percentages in the presence of missing data.</p>
+<p>For ungrouped datasets (i.e. no by argument in <code>tbl_summary</code>), using add_n is sufficient. For grouped datasets (<code>tbl_summary(by = something)</code>), additional columns with the observed Ns can be added, but it requires a few lines of code.</p>
+<p>The ‘Add Ns for gtsummary’ addin places the necessary code into the active document. One part of the code is a function, which should be moved to an appropriate location for functions (e.g. 01_packages_functions.R). The rest can be integrated into a <code>tbl_summary</code> call.</p>
 </div>
 <div class="section level3">
 <h3 id="quarto-report-templates">Quarto report templates<a class="anchor" aria-label="anchor" href="#quarto-report-templates"></a>
