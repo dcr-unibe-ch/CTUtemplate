@@ -1,3 +1,7 @@
+CTUtemplate 0.6.13
+---------------------
+* addition of `add_changelog`, including an addin, for easy inclusion of a change log section to a file (primarily intended for qmd files)
+
 CTUtemplate 0.6.12
 ---------------------
 * bug fix: `use_qmd_...` generated "Error: argument ping is missing"

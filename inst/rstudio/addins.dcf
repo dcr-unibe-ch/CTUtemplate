@@ -12,3 +12,9 @@ Name: Add Ns for gtsummary
 Description: Add code for showing Ns in gtsummary tables
 Binding: add_gtsummary_n
 Interactive: false
+
+Name: Add change log section
+Description: Add a change log section to a report
+Binding: add_changelog
+Interactive: false
+
